@@ -16,6 +16,6 @@ For help getting started with Flutter development, view the
 samples, guidance on mobile development, and a full API reference.
 
 # screenshots
-<img src='Screenshot (7).png' width='300' height='400'/><img src='Screenshot (8).png' width='300' height='400'/><img src='Screenshot (9).png' width='300' height='400'/>
-</br>
-<img src='Screenshot (10).png' width='300' height='400'/><img src='Screenshot (11).png' width='300' height='400'/>
+<img src='Screenshot (7).png' width='200' height='400'/><img src='Screenshot (8).png' width='200' height='400'/>
+<img src='Screenshot (9).png' width='200' height='400'/>
+<img src='Screenshot (10).png' width='200' height='400'/><img src='Screenshot (11).png' width='200' height='400'/>
