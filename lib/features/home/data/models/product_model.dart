@@ -6,8 +6,8 @@ class ProductModel {
   final String image;
   final RatingModel rating;
   final String category;
-
-  ProductModel({
+  ProductModel(
+    {
     required this.id,
     required this.title,
     required this.price,
@@ -27,10 +27,22 @@ class ProductModel {
       category: jsonData['category'],
     );
   }
+  Map<String, dynamic> toJson() {
+    final data = <String, dynamic>{
+      'id': id,
+      'title': title,
+      'price': price,
+      'description': description,
+      'category': category,
+      'image': image,
+      'rating': rating.toJson(),
+    };
+    return data;
+  }
 }
 
 class RatingModel {
-  final double rate;
+  final num rate;
   final int count;
 
   RatingModel({required this.rate, required this.count});
@@ -40,5 +52,11 @@ class RatingModel {
       rate: jsonData['rate'],
       count: jsonData['count'],
     );
+  }
+  Map<String, dynamic> toJson() {
+    return {
+      'rate': rate,
+      'count': count,
+    };
   }
 }
